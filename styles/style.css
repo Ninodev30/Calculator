@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+html {
+  font-size: calc(1vh + 1vw);
+}
+
+body {
+  background-color: hsl(222deg, 26%, 31%);
+  color: white;
+  padding: 3rem;
+}
+
+header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin: auto;
+}
+header h1 {
+  width: 30%;
+  font-size: 4rem;
+}
+header #themeGrandfather {
+  height: 50%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header #themeGrandfather span {
+  letter-spacing: calc(2px + 0.3vw);
+  margin-right: 4px;
+}
+header #themeGrandfather #themeFather {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #themeGrandfather #themeFather #theme {
+  background-color: hsl(223deg, 31%, 20%);
+  height: calc(10px + 40%);
+  width: calc(30px + 20%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1rem;
+}
+header #themeGrandfather #themeFather #theme .themeTypes {
+  height: 75%;
+  width: 25%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header #themeGrandfather #themeFather #theme #theme1 {
+  background-color: hsl(6deg, 63%, 50%);
+}
+header #themeGrandfather #themeFather #theme #theme1:active {
+  background-color: hsl(6deg, 63%, 60%);
+}
+header #themeGrandfather #themeFather #theme #theme2 {
+  background-color: hsl(223deg, 31%, 20%);
+  /* THIS IS REAL COLOR: background-color: hsl(25, 98%, 40%); */
+}
+header #themeGrandfather #themeFather #theme #theme2:active {
+  background-color: hsl(223deg, 31%, 30%);
+}
+header #themeGrandfather #themeFather #theme #theme3 {
+  background-color: hsl(223deg, 31%, 20%);
+  /* THIS IS REAL COLOR: background-color: hsl(176, 100%, 44%); */
+}
+header #themeGrandfather #themeFather #theme #theme3:active {
+  background-color: hsl(223deg, 31%, 30%);
+}
+
+main {
+  height: 75vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main input {
+  background-color: hsl(224deg, 36%, 15%);
+  color: white;
+  height: 20%;
+  width: 100%;
+  font-size: calc(7px + 4vh);
+  padding: 1rem 3rem 1rem 1rem;
+  outline: 0;
+  border: none;
+  border-radius: 1rem;
+  text-align: right;
+}
+main input::-moz-placeholder {
+  color: white;
+}
+main input:-ms-input-placeholder {
+  color: white;
+}
+main input::placeholder {
+  color: white;
+}
+main section {
+  background-color: hsl(223deg, 31%, 20%);
+  height: 70%;
+  width: 100%;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
+  grid-gap: calc(8px + 0.4rem);
+  padding: calc(10px + 1rem);
+  border-radius: 1rem;
+}
+main section button {
+  background-color: hsl(30deg, 25%, 89%);
+  color: hsl(221deg, 14%, 31%);
+  font-size: calc(10px + 2vh);
+  border: none;
+  border-radius: 1vh;
+  box-shadow: inset 0 -0.5vh hsl(28deg, 16%, 65%);
+  cursor: pointer;
+}
+main section button:active {
+  background-color: hsl(30deg, 25%, 99%);
+}
+main section #del,
+main section #reset {
+  background-color: hsl(225deg, 21%, 49%);
+  color: white;
+  font-size: calc(4px + 2vh);
+  box-shadow: inset 0 -0.5vh hsl(224deg, 28%, 35%);
+}
+main section #del:active,
+main section #reset:active {
+  background-color: hsl(225deg, 21%, 59%);
+}
+main section #reset {
+  grid-column: 1/3;
+}
+main section #equal {
+  background-color: hsl(6deg, 63%, 50%);
+  color: white;
+  grid-column: 3/5;
+  box-shadow: inset 0 -0.5vh hsl(6deg, 70%, 34%);
+}
+main section #equal:active {
+  background-color: hsl(6deg, 63%, 60%);
+}
+
+#attribution {
+  float: right;
+}
+#attribution p {
+  font-size: calc(5px + 0.3rem);
+}
+#attribution a {
+  font-size: calc(7px + 0.4rem);
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  body {
+    padding-top: 0;
+  }
+
+  header,
+main {
+    width: 30%;
+  }
+
+  header {
+    font-size: 0.8vw;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    padding-left: 2.5rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
