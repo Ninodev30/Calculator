@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+    <title>Calculadora</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>calc</h1>
+
+        <div id="themeGrandfather">
+
+            <span>1 2 3</span>
+
+            <div id="themeFather">
+
+                <P>THEME</P>
+
+                <div id="theme">
+
+                    <div onclick="theme1()" class="themeTypes" id="theme1"></div>
+                    <div onclick="theme2()" class="themeTypes" id="theme2"></div>
+                    <div onclick="theme3()" class="themeTypes" id="theme3"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <input type="text" name="result" id="result">
+
+        <section>
+
+            <button class="classButton" onclick="insert(7)">7</button>
+            <button class="classButton" onclick="insert(8)">8</button>
+            <button class="classButton" onclick="insert(9)">9</button>
+            <button class="classButton" id="del" onclick="deleteNumber()">DEL</button>
+            <button class="classButton" onclick="insert(4)">4</button>
+            <button class="classButton" onclick="insert(5)">5</button>
+            <button class="classButton" onclick="insert(6)">6</button>
+            <button class="classButton" onclick="insert('+')">+</button>
+            <button class="classButton" onclick="insert(1)">1</button>
+            <button class="classButton" onclick="insert(2)">2</button>
+            <button class="classButton" onclick="insert(3)">3</button>
+            <button class="classButton" onclick="insert('-')">-</button>
+            <button class="classButton" onclick="insert('.')">.</button>
+            <button class="classButton" onclick="insert('0')">0</button>
+            <button class="classButton" onclick="insert('/')">/</button>
+            <button class="classButton" onclick="insert('*')">X</button>
+            <button class="classButton" id="reset" onclick="clean()">RESET</button>
+            <button class="classButton" id="equal" onclick="equal()">=</button>
+
+        </section>
+
+    </main>
+
+    <div id="attribution">
+
+        <p>Coded by <a href="https://github.com/Ninodev30" target="_blank">Nino.dev</a></p>
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
